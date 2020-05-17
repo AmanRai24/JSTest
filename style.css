@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    min-width: 300px; 
+    font-family: "sans-serif";
+    background-color: lightblue;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  h1{
+      font-weight:bold;
+  }
+  
+  ul {
+    margin: 0px 100px 100px 280px;
+    padding: 0;
+    width: 60%;
+  }
+  
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 15px 10px 10px 30px;
+    list-style-type:none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.3s;   
+    border-radius: 1rem;
+  }
+  
+   ul li:nth-child(odd) {
+    background: white;
+  }
+  
+   ul li:hover {
+    background: lightgray;
+  }
+  
+  ul li.checked {
+    background:gray;
+    color: red;
+    text-decoration: line-through;
+  }
+  
+  ul li.checked::before {
+    /* content: ''; */
+    position: absolute;
+    border-color:white;
+    border-width: 0 2px 2px 0;
+    /* top: 10px;
+    left: 16px;
+    height: 15px;
+    width: 7px; */
+  }
+  
+
+  .clr {
+    color:red;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 20px 12px 18px;
+    border-radius: 1rem;
+  }
+  
+  .clr:hover {
+    background-color: red;
+    color: white;
+  }
+  
+  .head {
+    background-color:whitesmoke;
+    padding: 20px 10px;
+    color:black;
+    text-align: center;
+    border-radius: .5rem;
+    width: 60%;
+    margin:100px 100px 1px 280px;
+  }
+  
+  .head:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  input {
+    margin: 0;
+    border:none;
+    border-radius: 1rem;
+    width: 70%;
+    padding: 12px;
+    float: left;
+    font-size: 16px;
+    background:lightgrey;
+    font-family: "cursive, sans-serif";
+    text-align: left;
+    text-decoration:black;
+    margin-left: 75px;
+  }
+  #imgAdd{
+    height: 15px;
+    width: 15px;
+}
+  .add {
+    padding: 10px;
+    width: 5%;
+    background:lightgray;
+    color: black;
+    float: left;
+    text-align: center;
+    /* font-size: 16px; */
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: .5rem;
+  }
+  
+  .add:hover {
+    background-color: darkgrey;
+  }
